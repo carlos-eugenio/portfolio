@@ -154,3 +154,26 @@ iframe {
     position: absolute;
     top: 5%;
 }
+
+/* === NOT FOUND PAGE ===*/
+.not-found {
+    max-width: 800px;
+    margin: 6% auto;
+    text-align: center;
+}
+
+.not-found h1 {
+    font-size: 250px;
+    color: var(--color-purple);
+}
+
+.not-found h2 {
+    text-align: left;
+    font-size: 40px;
+    color: var(--color-green);
+}
+
+.not-found p {
+    text-align: center;
+    font-size: 40px;
+}
