@@ -14,11 +14,11 @@ nunjucks.configure("views", {
     noCache: true
 })
 
-server.get("/", function(req, res) {
+server.get("/about", function(req, res) {
     return res.render("about", { about: about_data })
 })
 
-server.get("/courses", function(req, res) {
+server.get("/", function(req, res) {
     return res.render("courses")
 })
 
