@@ -1,0 +1,16 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>{{items.title}} - Rocketseat</title>
+{% endblock %}
+
+{% block content %}
+    <div class="content-video">    
+        <iframe src="https://www.youtube.com/embed/{{items.id}}" frameborder="0"></iframe>
+        <div class="video-details">
+            <h1>{{items.title}}</h1>
+            <p>{{items.description}}</p>    
+        </div>
+    </div>
+    
+{% endblock %}

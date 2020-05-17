@@ -23,6 +23,16 @@ server.get("/", function(req, res) {
     return res.render("courses", { items: courses_data })
 })
 
+server.get("/courses", function(req, res) {
+    return res.render("courses", { items: courses_data })
+});
+
+server.get("/courses/:id", function(req, res) {
+    const id = req.params.id
+    const info_course = courses_data.find( id_course => id_course.id === `${id}` )
+    return res.render("course-details", { items: info_course })
+});
+
 server.use(function(req, res) {
     res.status(404).render("not-found")
 })
