@@ -106,6 +106,7 @@ header {
 .card__info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .card__price {
@@ -114,45 +115,6 @@ header {
     padding: 5px 20px;
     border-radius: 20px;
     text-align: center;
-}
-
-/* === MODAL === */
-.modal-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    visibility: hidden;
-}
-
-.modal {
-    background-color: white;
-    width: 90%;
-    height: 90%;
-    margin: 5vh auto;
-    position: relative;
-}
-
-.modal .close-modal {
-    color: black;
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    cursor: pointer;
-}
-
-/* === MODAL-ACTIVE === */
-.modal-overlay.active {
-   opacity: 1;
-   visibility: visible;
-}
-
-iframe {
-    width: 100%;
-    height: 90%;
-    position: absolute;
-    top: 5%;
 }
 
 /* === NOT FOUND PAGE ===*/
@@ -176,4 +138,36 @@ iframe {
 .not-found p {
     text-align: center;
     font-size: 40px;
+}
+
+/* === COURSE DETAILS === */
+.content-video {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.content-video iframe {
+    width: 70vw;
+    height: 70vh;
+    position: absolute;
+    margin: 5vh 15%;
+}
+
+.video-details {
+    width: 70vw;
+    position: absolute;
+    margin: 80vh 15%;
+}
+
+.video-details h1 {
+    text-align: left;
+    font-size: 40px;
+}
+
+.video-details p {
+    text-align: left;
+    font-size: 20px;
+    padding-top: 0.5%;
+    padding-bottom: 10%;
 }
